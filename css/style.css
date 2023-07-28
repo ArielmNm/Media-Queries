@@ -1,0 +1,139 @@
+* {
+    box-sizing: border-box;
+}
+
+.title{
+    color: white;
+    text-align: center;
+}
+
+.row::after {
+    content: "";
+    clear: both;
+    display: table;
+}
+
+.row{
+    background-color: #6476db;
+}
+
+[class*="col-"] {
+    float: left;
+    padding: 15px;
+}
+
+html {
+    font-family: "lucida-sans", sans-serif;
+}
+
+.header {
+    background-color: #8f1fc7;
+    color: #ffffff;
+    padding: 15px;
+}
+
+.menu ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+.menu li {
+    padding: 8px;
+    margin-bottom: 7px;
+    background-color: #0fa7de;
+    color: #ffffff;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24)
+}
+
+.menu li:hover {
+    background-color: #09c9e7;
+}
+
+.aside {
+    background-color: #0fa7de;
+    padding: 15px;
+    color: #ffffff;
+    text-align: center;
+    font-size: 14px;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
+    border-radius: 10px;
+}
+
+.fotter {
+    background-color: #1710d8;
+    color: #ffffff;
+    text-align: center;
+    font-size: 12px;
+    padding: 15px;
+}
+
+[class*="col-"] {
+    width: 100%;
+}
+
+
+@media only screen and (min-width: 601px) {
+    .col-s-1 {
+        width: 50%;
+    }
+
+    .col-s-2 {
+        width: 100%;
+    }
+
+
+    .aside{
+        background-color: #1fc738f9;
+    }
+    .row{
+        background-color: #1ded4a55;
+    }
+    .menu li{
+        background-color: #16dd3e;
+    }
+    html {
+        font-family: "lucida-sans", sans-serif;
+        color: rgb(37, 27, 27);
+    }
+    .fotter{
+        background-color: #16dd3e;
+    }
+    .title{
+        color: black;
+        text-align: center;
+    }
+}
+@media only screen and (min-width: 900px) {
+    .col-s-1 {
+        width: 33.33%;
+    }
+
+    .col-s-2 {
+        width: 66.66%;
+    }
+
+    .col-s-3 {
+        width: 100%;
+    }
+    .aside{
+        background-color: darkgray
+    }
+    .row{
+        background-color: grey
+    }
+    .menu li{
+        background-color: darkgray
+    }
+    html {
+        font-family: "lucida-sans", sans-serif;
+        color: rgb(6, 2, 2);
+    }
+    .fotter{
+        background-color: darkgray
+    }
+    .title{
+        color: white;
+        text-align: center;
+    }
+}
